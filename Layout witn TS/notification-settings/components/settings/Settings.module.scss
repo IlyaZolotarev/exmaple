@@ -1,0 +1,30 @@
+@import './static/styles/base/variables';
+
+.settingsBlock {
+  max-width: 496px;
+  width: 100%;
+  padding: 16px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $colorLightGrey;
+  border-radius: 6px;
+  margin-bottom: 44px;
+  &:first-child {
+    margin-bottom: 16px;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  color: $colorTitleGrey;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.description {
+  color: $colorGrey;
+  font-size: 14px;
+  line-height: 20px;
+}

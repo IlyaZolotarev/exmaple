@@ -1,0 +1,37 @@
+@import './static/styles/base/variables';
+
+.tagInputWrapper {
+  position: relative;
+  display: initial;
+  align-items: center;
+  min-width: 91px;
+  width: 100%;
+  padding: 6px 12px;
+  background-color: $colorBlackNight;
+  border-radius: 15px;
+
+  .tagInput {
+    margin-bottom: 54px;
+  }
+
+  & > div {
+    display: inherit;
+  }
+}
+
+.tagInput {
+  input {
+    background-color: inherit;
+    border: none;
+    color: $colorWhite;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 18px;
+  }
+}
+
+.closeTagInput {
+  width: 9px !important;
+  height: 9px !important;
+  position: static !important;
+}

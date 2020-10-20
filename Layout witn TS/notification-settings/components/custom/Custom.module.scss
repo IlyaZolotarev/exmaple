@@ -1,0 +1,51 @@
+@import './static/styles/base/variables';
+
+.title {
+  color: $colorTitleGrey;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.description {
+  color: $colorGrey;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-bottom: 26px;
+}
+
+.tagsBlock {
+  max-width: 496px;
+  width: 100%;
+  padding: 22px 18px 14px;
+  background-color: $colorLightGrey;
+  margin-bottom: 12px;
+}
+
+.addNew {
+  cursor: pointer;
+  color: $colorCagoraGreen;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-bottom: 60px;
+}
+
+.button {
+  color: $colorWhite;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  text-align: center;
+  max-width: 240px;
+  width: 100%;
+  background-color: $colorCagoraGreen;
+  padding: 16px 45px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
