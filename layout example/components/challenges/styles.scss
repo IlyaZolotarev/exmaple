@@ -1,0 +1,125 @@
+@import './static/styles/base/variables';
+
+.challenges-dnrt {
+  position: relative;
+  overflow-x: hidden;
+  padding-top: 230px;
+  padding-bottom: 150px;
+
+  @media screen and (max-width: 991px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  @media screen and (max-width: 400px) {
+    padding-top: 50px;
+  }
+
+  & .container {
+    position: relative;
+  }
+
+  &__container-inner-wrapper {
+    display: flex;
+    align-items: flex-start;
+
+    @media screen and (max-width: 1299px) {
+      flex-direction: column;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: radial-gradient(
+      circle,
+      #f7f7f7 3px,
+      $colorLightSmoke 0%
+    );
+    background-size: 25px 25px;
+    background-position: -8px 14px;
+    z-index: -3;
+  }
+
+  &__img-wrapper {
+    padding-top: 25px;
+
+    @media screen and (max-width: 1299px) {
+      padding-top: 0px;
+      max-width: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__inner-img-wrapper {
+    max-width: 572px;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    -webkit-box-shadow: 9px 10px 14px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 10px 14px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 10px 14px -4px rgba(198, 195, 195, 0.75);
+
+    img {
+      object-fit: contain;
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+  }
+
+  &__info-block {
+    max-width: 558px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: $colorNightRider;
+    margin-right: 39px;
+
+    @media screen and (max-width: 1299px) {
+      max-width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 51px;
+    margin-bottom: 7px;
+
+    @media screen and (max-width: 498px) {
+      font-size: 35px;
+    }
+
+    @media screen and (max-width: 439px) {
+      font-size: 28px;
+    }
+
+    @media screen and (max-width: 356px) {
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 141.2%;
+
+    @media screen and (max-width: 1299px) {
+      margin-bottom: 24px;
+    }
+  }
+}

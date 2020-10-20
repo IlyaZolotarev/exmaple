@@ -1,0 +1,77 @@
+@import './static/styles/base/variables';
+
+.review-dnrt {
+  position: relative;
+  padding-bottom: 150px;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 100px;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0a339e;
+    z-index: -3;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    color: $colorWhite;
+    margin-bottom: 30px;
+  }
+
+  &__info-block {
+    max-width: 738px;
+    width: 100%;
+    background: $colorWhiteSmoke;
+    box-shadow: 5px 5px 8px #053576, -5px -5px 8px #0b40cb;
+    border-radius: 5px;
+    padding: 34px;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #052f9c;
+    margin-bottom: 5px;
+  }
+
+  &__position {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 131%;
+    color: $colorNightRider;
+    margin-bottom: 12px;
+  }
+
+  &__review {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    color: $colorNightRider;
+  }
+
+  &__decor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 140px;
+    background-image: radial-gradient(
+      circle,
+      #07309b 3px,
+      #0a339e 0%
+    );
+    background-size: 25px 25px;
+    background-position: -8px 14px;
+    z-index: -3;
+  }
+}

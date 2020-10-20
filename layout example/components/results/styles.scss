@@ -1,0 +1,111 @@
+@import './static/styles/base/variables';
+
+.results-dnrt {
+  position: relative;
+  padding-bottom: 100px;
+  overflow: hidden;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 70px;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0a339e;
+    z-index: -3;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 51px;
+    color: $colorWhite;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    max-width: 770px;
+    width: 100%;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    color: $colorWhite;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(269px, 269px));
+    grid-column-gap: 40px;
+    grid-row-gap: 35px;
+
+    @media screen and (max-width: 991px) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    position: relative;
+    max-width: 269px;
+    width: 100%;
+    background: #f0f0f0;
+    box-shadow: 5px 5px 8px #063676, -5px -5px 8px #0439c4;
+    border-radius: 5px;
+    padding: 30px 10px;
+
+    @media screen and (max-width: 767px) {
+      min-height: 135px;
+    }
+  }
+
+  &__id {
+    position: absolute;
+    top: 0;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 56px;
+    color: rgba(13, 54, 161, 0.15);
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #323232;
+  }
+
+  &__right-shape::before {
+    content: url('/static/images/daunert/results/right-shape.svg');
+    right: 0;
+    top: 285px;
+
+    @media screen and (max-width: 1199px) {
+      content: '';
+    }
+  }
+
+  &__right-shape-sm::before {
+    content: url('/static/images/daunert/results/right-shape-sm.svg');
+    right: 25px;
+    top: 125px;
+
+    @media screen and (max-width: 1199px) {
+      right: 215px;
+      top: 297px;
+    }
+
+    @media screen and (max-width: 991px) {
+      right: 247px;
+      top: 497px;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}

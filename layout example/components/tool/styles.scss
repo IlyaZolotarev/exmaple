@@ -1,0 +1,240 @@
+@import './static/styles/base/variables';
+
+.tool-dnrt {
+  position: relative;
+  padding-top: 150px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: radial-gradient(
+      circle,
+      #f7f7f7 3px,
+      $colorLightSmoke 0%
+    );
+    background-size: 25px 25px;
+    background-position: -8px 14px;
+    z-index: -3;
+  }
+
+  @media screen and (max-width: 1299px) {
+    overflow-x: hidden;
+  }
+
+  @media screen and (max-width: 991px) {
+    padding-top: 100px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 70px;
+  }
+
+  & .container {
+    position: relative;
+  }
+
+  &__container-inner-wrapper {
+    display: flex;
+    align-items: flex-start;
+
+    @media screen and (max-width: 1299px) {
+      justify-content: center;
+    }
+  }
+
+  &__img-wrapper {
+    padding-top: 25px;
+
+    @media screen and (max-width: 1299px) {
+      display: none;
+    }
+  }
+
+  &__img-wrapper2 {
+    display: none;
+
+    @media screen and (max-width: 1299px) {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__inner-img-wrapper {
+    max-width: 471px;
+    width: 100%;
+    margin-right: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    -webkit-box-shadow: 9px 10px 14px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 10px 14px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 10px 14px -4px rgba(198, 195, 195, 0.75);
+
+    @media screen and (max-width: 1299px) {
+      margin-right: 0;
+    }
+
+    img {
+      object-fit: contain;
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+  }
+
+  &__info-block {
+    max-width: 670px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: $colorNightRider;
+
+    @media screen and (max-width: 1299px) {
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 51px;
+
+    @media screen and (max-width: 1299px) {
+      font-size: 38px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 36px;
+    }
+
+    @media screen and (max-width: 531px) {
+      font-size: 34px;
+    }
+
+    @media screen and (max-width: 503px) {
+      font-size: 32px;
+    }
+  }
+
+  // &__description {
+  //   font-weight: 300;
+  //   font-size: 24px;
+  //   line-height: 141.2%;
+  //   margin-bottom: 7px;
+  // }
+
+  &__sub-description {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 141.2%;
+    margin-bottom: 7px;
+
+    @media screen and (max-width: 1299px) {
+      margin-bottom: 24px;
+      font-size: 38px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 36px;
+    }
+
+    @media screen and (max-width: 531px) {
+      font-size: 34px;
+    }
+
+    @media screen and (max-width: 503px) {
+      font-size: 32px;
+    }
+  }
+
+  &__summary {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 12px;
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  &__results {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  &__left-shape::before {
+    content: url('/static/images/daunert/tool/left-shape.svg');
+    top: 320px;
+    left: 0;
+
+    @media screen and (max-width: 1369px) {
+      left: -24px;
+    }
+
+    @media screen and (max-width: 1299px) {
+      left: -142px;
+    }
+
+    @media screen and (max-width: 991px) {
+      left: -145px;
+    }
+
+    @media screen and (max-width: 828px) {
+      top: 400px;
+    }
+
+    @media screen and (max-width: 612px) {
+      display: none;
+    }
+  }
+
+  &__left-shape-sm::before {
+    content: url('/static/images/daunert/tool/left-shape-sm.svg');
+    top: 433px;
+    left: 39px;
+
+    @media screen and (max-width: 1299px) {
+      top: 327px;
+      left: 850px;
+    }
+
+    @media screen and (max-width: 1299px) {
+      display: none;
+    }
+  }
+
+  &__left-shape-sm2::before {
+    content: url('/static/images/daunert/tool/left-shape-sm.svg');
+    display: none;
+
+    @media screen and (max-width: 991px) {
+      display: block;
+      right: -124px;
+      bottom: 178px;
+    }
+
+    @media screen and (max-width: 828px) {
+      display: block;
+      right: -124px;
+      bottom: 278px;
+    }
+
+    @media screen and (max-width: 612px) {
+      bottom: 478px;
+    }
+
+    @media screen and (max-width: 575px) {
+      display: none;
+    }
+  }
+}
